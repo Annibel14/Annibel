@@ -10,11 +10,17 @@ body{
 }
 
 .mfct p{
-    font-size: 18px;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.mfct img{
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 .mfct ul{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .parrafo{
@@ -137,11 +143,11 @@ header .textos-header{
 /*FOOTER*/
 
 footer{
-    background: #eca3c5;
+    background: #352e9b;
     height: auto;
     width: 100vw;
     padding-top: 40px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .footer-content{
@@ -180,7 +186,7 @@ footer{
 
 .sociales a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .sociales a i{
@@ -193,7 +199,7 @@ footer{
 }
 
 .footer-bottom{
-    background: #dd7db2;
+    background: #9b9ada;
     width: 100vw;
     padding: 20px 0;
     text-align: center;
