@@ -37,5 +37,6 @@ Equipos Electricos: 360 horas
 Mecanizado: 720 horas
 Gestion administrativa y tributaria: 360 horas
 
-Requisitos para ser un centro de trabajo:
+Requisitos para ser un centro de trabajo: 
+Solicitar cita previa en la página oficial de la Comunidad Autónoma. Aducir en fecha y hora a las oficinas de la Comunidad Autónoma. Rellenar impreso oficial de comunicación de apertura centro de trabajo. Presentar comunicación por cuadruplicado ante la autoridad laboral.
 
