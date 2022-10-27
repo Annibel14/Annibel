@@ -8,6 +8,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.parrafo{
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
 .contenedor{
     padding: 60px 0;
     width: 90%;
@@ -30,9 +36,9 @@ header{
     height: 550px;
     background: #ED213A;  
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(7, 27%, 74%, 0.651), hsla(352, 91%, 77%, 0.521)), url(../img/ipisa.jpg); 
+    background: -webkit-linear-gradient(to right, hsla(7, 27%, 74%, 0.651), hsla(352, 91%, 77%, 0.63)), url(../img/ipisa.jpg); 
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(7, 27%, 74%, 0.651), hsla(352, 91%, 77%, 0.521)), url(../img/ipisa.jpg); 
+    background: linear-gradient(to right, hsla(7, 27%, 74%, 0.651), hsla(352, 91%, 77%, 0.623)), url(../img/ipisa.jpg); 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
