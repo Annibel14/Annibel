@@ -3,7 +3,7 @@
 }
 
 body {
-	background: #f5f0f0;
+	background: rgb(245, 181, 109);
 	font-family: 'Montserrat', sans-serif;
 	min-height: 100vh;
 	align-items: center;
@@ -26,7 +26,6 @@ body {
 .contenido-principal__imagen {
 	vertical-align: top;
 	margin-right: 20px;
-	width: 50%;
 	max-width: 550px;
 }
 
