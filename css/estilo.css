@@ -275,6 +275,16 @@ img{
     margin-top: 70px;
 }
 
+.container1 p{
+    text-align: justify;
+
+}
+
+.container1 h3{
+    text-align: center;
+
+}
+
 .slide{
     display: flex;
     transform: translate3d(0, 0, 0);
