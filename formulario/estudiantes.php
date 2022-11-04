@@ -1,6 +1,4 @@
-<?php
 
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,6 +10,9 @@
     <link rel="icon" href="">
 </head>
 <body>
+
+<form method="GET" action="conexion.php">
+
     <section class="form-register">
         <h1><i>Estudiantes</i></h1>
         <h3><i>Regístrate para elegir su opción como estudiante o egresado</i></h3>
@@ -42,6 +43,13 @@
     <section class="form-login">
         <p>¿Ya tengo una cuenta? <a href="Login/index.html"><u>Inicia sesión</u></a></p>
     </section>
+</form>
+<?php
 
+
+
+echo "Funciono";
+
+?>
 </body>
 </html>
