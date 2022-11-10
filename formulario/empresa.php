@@ -8,9 +8,9 @@
 </head>
 
 <body>
-
-    <form action=""
-        <center><br><br>
+ <center>
+    <form action="">
+        <br><br>
             <h4>Nombre de la empresa</h4>
             <p></p>
             <input class="Nombre de la empresa " type="text" name="Nombre de la empresa" id="Nombre de la empresa"><br> <br>
@@ -55,6 +55,10 @@
           <br>
        <label>Direccion:</label> 
        <input name="direccion"> </br>
+
+       <br>
+       <label>  Sector:</label> 
+       <input name="sector"> </br>
        
        <br>
        <label>  Seccion:</label> 
@@ -63,6 +67,8 @@
        <br>
        <label>Municipio:</label> 
        <input name="municipio"> </br>
+
+       
  
        <br>
 
@@ -134,15 +140,36 @@
         <label>Contraseña:</label>  
         <input type="password" name="clave">  
       </li>  
+      
+     <br>
 
-      <button type="submit">Acceder</button>  
+     <br>
+     <label>Confirmar contraseña:</label> </br>
+
+     <br>
+
+     <input name="confirmar contraseña">  </br>
+
+  <br>
     </ul>  
     </form> 
 </br>  
-          
-        </center>
-    </form>
 
+<br>
+       <label>  Telefono:</label> 
+       <input name="telefono"> </br>
+
+
+       <br>
+       <label> Correo:</label> 
+       <input name="correo"> </br>
+          
+        <br>
+      <button type="submit">Acceder</button> </br>
+
+
+    </form>
+    </center>
 <?php
 
 
