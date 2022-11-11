@@ -128,32 +128,16 @@
      <input name="email">  </br>
   
      <br>
-     <label>Confirmar mail:</label> </br>
-
-     <br>
-
+     <label>Confirmar email:</label>
      <input name="confirmar email">  </br>
 
-  <br>
-      </li>  
-      <li>  
-        <label>Contraseña:</label>  
-        <input type="password" name="clave">  
-      </li>  
-      
      <br>
+      <label>Contraseña:</label>  
+      <input type="password" name="clave"> <br>
 
      <br>
-     <label>Confirmar contraseña:</label> </br>
-
-     <br>
-
+     <label>Confirmar contraseña:</label>
      <input name="confirmar contraseña">  </br>
-
-  <br>
-    </ul>  
-    </form> 
-</br>  
 
 <br>
        <label>  Telefono:</label> 
