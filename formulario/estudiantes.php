@@ -966,8 +966,8 @@ Carrera Técnica
         <br><br>Confirmar Contraseña
         <br>
         <input class="controls" type="password" name="correo" id="correo" placeholder="Confirme su contraseña">
-        
-        <a href="" class="main-header__link"><input class="botons" type="submit" value="Registrarse"></a>
+        <br><br>
+        <a href="" class="main-header__link"><input class="botons" type="submit" value="ENVIAR"></a>
     </section>
 
 </form>
