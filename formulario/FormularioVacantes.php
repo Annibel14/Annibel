@@ -41,6 +41,59 @@
         <input type="submit" value="ENVIAR"> <br> <br> <br> <br>
     </form>
 </div>
+
+<h3>DATOS GUARDADOS</h3>
+
+<table border="2">
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Puesto</th>
+            <th>Perfil</th>
+            <th>Sueldo</th>
+            <th>Ubicacion</th>
+            <th>Contrato</th>
+            <th>Horario</th>
+            <th>Correo</th>
+            <th>Persona Contacto</th>
+            <th>Telefono</th>
+        </tr>
+
+
+<?php 
+    require("conexionvacantes.php");
+
+    $query = "SELECT * FROM vacantes";
+    $data = mysqli_query($mysqli, $query);
+    $total = mysqli_num_rows($data);
+
+    if($total!=0){
+        while($row=mysqli_fetch_assoc($data)){
+            echo "<tr> 
+            <td>" . $row['IdVacante'] . "</td> 
+            <td>" . $row['NombreE'] . "</td> 
+            <td>" . $row['Puesto'] . "</td> 
+            <td>" . $row['PerfilP'] . "</td>
+            <td>" . $row['Sueldo'] . "</td> 
+            <td>" . $row['Ubicacion'] . "</td> 
+            <td>" . $row['TipoContrato'] . "</td> 
+            <td>" . $row['Horario'] . "</td> 
+            <td>" . $row['CorreoC'] . "</td> 
+            <td>" . $row['PersonaContacto'] . "</td> 
+            <td>" . $row['Telefono'] . "</td> 
+            <td> <a href='delete.php?Id=$row[IdVacante]'>Borrar</td></tr>";;
+        }
+    }
+
+    ?>
+    </table>
+
+    <h3>Buscar Vacantes</h3>
+
+    <form action="buscarvacantes.php" method="GET">
+        <input type="text" name="Nombre" placeholder="Nombre"> <br> <br>
+        <input type="submit" value="BUSCAR">
+    </form> <br>
     </center>
 </body>
 </html>
