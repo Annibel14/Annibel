@@ -18,7 +18,7 @@
        <br>
        Año de graduación
        <br>
-       <center><SELECT NAME="Años de graduación" class="controls">
+       <center><SELECT NAME="AnoG" class="controls">
 
 <OPTION VALUE="1992">1992
 <OPTION VALUE="1993">1993
@@ -58,7 +58,7 @@
 <br>
 Instituto educativo a la que pertenece
 <br>
-<SELECT NAME="Instituto educativo a la que pertenece" class="controls">
+<SELECT NAME="CentroE" class="controls">
 
 <OPTION VALUE="IPISA" SELECTED>IPISA
 <OPTION VALUE="IPIBOSCO">IPIBOSCO
@@ -88,15 +88,15 @@ Curso
         <br>
         Matrícula
         <br>
-        <input class="controls" type="text" name="Matrícula" id="Matrícula" placeholder="Ingrese su matrícula">
+        <input class="controls" type="text" name="Matricula" id="Matrícula" placeholder="Ingrese su matrícula">
         <br><br>
         Cédula de Identidad
         <br>
-        <input class="controls" type="text" name="Cédula de Identidad" id="Cédula de Identidad" placeholder="Ingrese su Cédula de Identidad">
+        <input class="controls" type="text" name="Cedula" id="Cédula de Identidad" placeholder="Ingrese su Cédula de Identidad">
         <br><br>
 Carrera Técnica
 <br>
-<SELECT NAME="Carrera Técnica" class="controls">
+<SELECT NAME="CarreraT" class="controls">
 
 <OPTION VALUE="Confección y Patronaje" SELECTED>Confección y Patronaje
 <OPTION VALUE="Desarrollo y Administración de Aplicaciones Informáticas">Desarrollo y Administración de Aplicaciones Informáticas
@@ -112,7 +112,7 @@ Carrera Técnica
         <br><br>
        Técnico Básico
         <br>
-        <SELECT NAME="Técnico Básico" class="controls">
+        <SELECT NAME="TecnicoB" class="controls">
 
         <OPTION VALUE="">
 <OPTION VALUE="N/A">N/A
@@ -129,7 +129,7 @@ Carrera Técnica
         <input class="controls" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese sus apellidos">
         <br><br>Fecha de nacimiento
         <br>
-        <input class="controls" type="date" name="Fecha de nacimiento" id="Fecha de nacimiento" placeholder="Ingrese su Fecha de nacimiento">
+        <input class="controls" type="date" name="FechaNac" id="Fecha de nacimiento" placeholder="Ingrese su Fecha de nacimiento">
         <br><br>Sexo
         <br>
         <SELECT NAME="Sexo" class="controls">
@@ -142,20 +142,20 @@ Carrera Técnica
          <br>Dirección
         <br>
         
-        <input class="controls" type="text" name="Dirección" id="Dirección" placeholder="Ingrese su Dirección">
+        <input class="controls" type="text" name="Direccion" id="Direccion" placeholder="Ingrese su Dirección">
         <br><br>Sector
         <br>
         <input class="controls" type="text" name="Sector" id="Sector" placeholder="Ingrese su Sector">
         <br><br>Sección
         <br>
-        <input class="controls" type="text" name="Sección" id="Sección" placeholder="Ingrese su Sección">
+        <input class="controls" type="text" name="Seccion" id="Seccion" placeholder="Ingrese su Sección">
         <br><br>Municipio
         <br>
         <input class="controls" type="text" name="Municipio" id="Municipio" placeholder="Ingrese su Municipio">
         <br><br>Provincia
         <br>
 
-        <SELECT NAME="Provincias" class="controls">
+        <SELECT NAME="Provincia" class="controls">
 
 <OPTION VALUE="Azua" SELECTED>Azua
 <OPTION VALUE="Bahoruco">Bahoruco
@@ -193,7 +193,7 @@ Carrera Técnica
 
 <br><br>País de nacionalidad
         <br>
-        <SELECT NAME="País de nacionalidad" class="controls">
+        <SELECT NAME="PaisNac" class="controls">
 
 <OPTION VALUE="República Dominicana" SELECTED>República Dominicana
 <OPTION VALUE="Albania">Albania
@@ -395,49 +395,56 @@ Carrera Técnica
 
 <br><br>Teléfono Residencial
         <br>
-        <input class="controls" type="text" name="Teléfono Residencial" id="Teléfono Residencial" placeholder="Ingrese su Teléfono Residencial">
+        <input class="controls" type="text" name="TelefonoR" id="TelefonoR" placeholder="Ingrese su Teléfono Residencial">
         <br><br>Teléfono Móvil
         <br>
-        <input class="controls" type="text" name="Teléfono Móvil" id="Teléfono Móvil" placeholder="Ingrese su Teléfono Móvil">
+        <input class="controls" type="text" name="TelefonoM" id="TelefonoM" placeholder="Ingrese su Teléfono Móvil">
         <br><br>Posee licencia de conducir?
         <br>
-        <INPUT TYPE="checkbox" NAME="Posee licencia de conducir[]" VALUE="">
+        <br>
+        <INPUT TYPE="checkbox" NAME="Licencia" VALUE="Si">Si
+        <br>
+        <INPUT TYPE="checkbox" NAME="Licencia" VALUE="No">No
 
         <br><br>Posee vehiculo propio?
         <br>
-        <INPUT TYPE="checkbox" NAME="Posee vehiculos propios[]" VALUE="">
+        <br>
+        <INPUT TYPE="checkbox" NAME="VehiculoP" VALUE="Si">Si
+        <br>
+        <INPUT TYPE="checkbox" NAME="VehiculoP" VALUE="No">No
+
 
         <br><br>Años de experiencias (Si lo tiene)
         <br>
-        <input class="controls" type="text" name="Años de experiencias" id="Años de experiencias" placeholder="Ingrese sus años de experiencias">
+        <input class="controls" type="text" name="AnosExp" id="Años de experiencias" placeholder="Ingrese sus años de experiencias">
 
         <br><br>Desea trabajar en el área técnica que estudió u otra área?
         <br>
         <br>
-        <INPUT TYPE="checkbox" NAME="extras[]" VALUE="Área técnica que estudié">Área técnica que estudié
+        <INPUT TYPE="checkbox" NAME="AreaTecEst" VALUE="Area Tecnica">Área técnica que estudié
         <br>
-        <INPUT TYPE="checkbox" NAME="extras[]" VALUE="Otra área">Otra área
+        <INPUT TYPE="checkbox" NAME="OtraAreaBtn" VALUE="Otra">Otra área
 
         <br><br>Si es otra área, especifique cual
         <br>
-        <input class="controls" type="text" name="Otra área" id="Otra área" placeholder="Ingrese el área">
+        <input class="controls" type="text" name="OtraAreaEspecificacion" id="OtraAreaEspecificacion" placeholder="Ingrese el área">
 
         <br><br>Adjunte su Currículum Vitae
         <br>
-        <input class="controls" type="file" name="Currículum Vitae" id="Currículum Vitae" placeholder="Adjunta tu Currículum Vitae">
+        <input class="controls" type="file" name="CVarchivo" id="CVarchivo" placeholder="Adjunta tu Currículum Vitae">
 
         <br><br>Correo
         <br>
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+        <input class="controls" type="email" name="Email" id="Email" placeholder="Ingrese su correo">
         <br><br>Confirmar Correo
         <br>
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Confirme su correo">
+        <input class="controls" type="email" name="ConfEmail" id="ConfEmail" placeholder="Confirme su correo">
         <br><br>Contraseña
         <br>
-        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su contraseña">
+        <input class="controls" type="password" name="Contrasena" id="Contrasena" placeholder="Ingrese su contraseña">
         <br><br>Confirmar Contraseña
         <br>
-        <input class="controls" type="password" name="correo" id="correo" placeholder="Confirme su contraseña">
+        <input class="controls" type="password" name="ConfContrasena" id="ConfContrasena" placeholder="Confirme su contraseña">
         <br><br>
         <a href="" class="main-header__link"><input class="botons" type="submit" value="ENVIAR"></a>
     </section>
