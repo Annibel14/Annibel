@@ -81,7 +81,7 @@
             <td>" . $row['CorreoC'] . "</td> 
             <td>" . $row['PersonaContacto'] . "</td> 
             <td>" . $row['Telefono'] . "</td> 
-            <td> <a href='delete.php?Id=$row[IdVacante]'>Borrar</td></tr>";;
+            <td> <a href='deletevacantes.php?Id=$row[IdVacante]'>Borrar</td></tr>";;
         }
     }
 
@@ -94,6 +94,13 @@
         <input type="text" name="Nombre" placeholder="Nombre"> <br> <br>
         <input type="submit" value="BUSCAR">
     </form> <br>
+
+    <h3>Editar Vacantes</h3>
+
+    <form action="updatevacantes.php" method="POST">
+        <input type="text" name="Id" placeholder="Id"> <br><br>
+        <input type="submit" value="EDITAR">
+    </form> <br><br>
     </center>
 </body>
 </html>
