@@ -45,7 +45,7 @@
     $ConfContrasena=$_REQUEST['ConfContrasena'];
    
 
-    $query="insert into estudiante values(0,'$$AnoG', '$CentroE', '$Curso', '$Matricula', '$Cedula', '$CarreraT', '$TecnicoB', '$Nombres', '$Apellidos', '$FechaNac','$$Sexo', '$Direccion', '$Sector', '$Seccion', '$Municipio', '$Provincia', '$PaisNac', '$TelefonoR', '$TelefonoM', '$Licencia','$VehiculoP', '$AnosExp', '$AreaTecEst', '$OtraAreaBtn', '$OtraAreaEspecificacion', '$CVarchivo', '$Email', '$ConfEmail', '$Contrasena', '$ConfContrasena')";
+    $query="insert into estudiante values(0,'$AnoG', '$CentroE', '$Curso', '$Matricula', '$Cedula', '$CarreraT', '$TecnicoB', '$Nombres', '$Apellidos', '$FechaNac', '$Sexo', '$Direccion', '$Sector', '$Seccion', '$Municipio', '$Provincia', '$PaisNac', '$TelefonoR', '$TelefonoM', '$Licencia', '$VehiculoP', '$AnosExp', '$AreaTecEst', '$OtraAreaBtn', '$OtraAreaEspecificacion', '$CVarchivo', '$Email', '$ConfEmail', '$Contrasena', '$ConfContrasena')";
     echo $query;
     $x=mysqli_query($conexion,$query);
     echo $x;
