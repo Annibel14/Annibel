@@ -90,7 +90,7 @@ Curso
         <br>
         <input class="controls" type="text" name="Matrícula" id="Matrícula" placeholder="Ingrese su matrícula">
         <br><br>
-        <centerCédula de Identidad
+        Cédula de Identidad
         <br>
         <input class="controls" type="text" name="Cédula de Identidad" id="Cédula de Identidad" placeholder="Ingrese su Cédula de Identidad">
         <br><br>
