@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form method="GET" action="conexionestudiantes.php">
+<form method="POST" action="guardar.php">
 
     <section class="form-register">
         <h1><i>Estudiantes</i></h1>
@@ -448,8 +448,110 @@ Carrera Técnica
         <br><br>
         <a href="" class="main-header__link"><input class="botons" type="submit" value="ENVIAR"></a>
     </section>
-
+<br>
+<br>
 </form>
+<center><h3>DATOS GUARDADOS</h3></center>
+
+<table border="2">
+<tr>
+         <th>ID</th>
+         <th>Año de graduacion</th>
+         <th>Institución educativa a la que pertenece</th>
+         <th>Curso</th>
+         <th>Matrícula</th>
+         <th>Cédula de Identidad</th>
+         <th>Carrera Técnica</th>
+         <th>Técnico básico</th>
+         <th>Nombres</th>
+         <th>Apellidos</th>
+         <th>Fecha de nacimiento</th>
+         <th>Sexo</th>
+         <th>Dirección</th>
+         <th>Sector</th>
+         <th>Sección</th>
+         <th>Municipio</th>
+         <th>Provincia</th>
+         <th>País de Nacionalidad</th>
+         <th>Teléfono Residencial</th>
+         <th>Teléfono Móvil</th>
+         <th>Posee licencia de conducir?</th>
+         <th>Posee vehículo propio?</th>
+         <th>Años de experiencia</th>
+         <th>Area Ténica estudiada</th>
+         <th>Otra área</th>
+         <th>Especificación de la otra área</th>
+         <th>Currículum Vitae</th>
+         <th>Email</th>
+         <th>Confirmar Email</th>
+         <th>Contraseña</th>
+         <th>Confirmar contraseña</th>
+         <th>Eliminar</th>
+        </tr>
+
+
+<?php 
+    require("conexionestudiantes.php");
+
+    $query = "SELECT * FROM estudiante";
+    $data = mysqli_query($conexion, $query);
+    $total = mysqli_num_rows($data);
+
+    if($total!=0){
+        while($row=mysqli_fetch_assoc($data)){
+            echo "<tr> 
+            <td>" . $row['IdEstudiante'] . "</td>
+            <td>" . $row['AnoG'] . "</td> 
+            <td>" . $row['CentroE'] . "</td> 
+            <td>" . $row['Curso'] . "</td> 
+            <td>" . $row['Matricula'] ."</td> 
+            <td>" . $row['Cedula'] . "</td>
+            <td>" . $row['CarreraT'] . "</td> 
+            <td>" . $row['TecnicoB'] . "</td> 
+            <td>" . $row['Nombres'] . "</td> 
+            <td>" . $row['Apellidos'] . "</td> 
+            <td>" . $row['FechaNac'] . "</td>
+            <td>" . $row['Sexo'] . "</td> 
+            <td>" . $row['Direccion'] . "</td> 
+            <td>" . $row['Sector'] . "</td> 
+            <td>" . $row['Seccion'] . "</td> 
+            <td>" . $row['Municipio'] ."</td> 
+            <td>" . $row['Provincia'] . "</td> 
+            <td>" . $row['PaisNac'] . "</td> 
+            <td>" . $row['TelefonoR'] . "</td> 
+            <td>" . $row['TelefonoM'] . "</td> 
+            <td>" . $row['Licencia'] . "</td> 
+            <td>" . $row['VehiculoP'] . "</td>
+            <td>" . $row['AnosExp'] . "</td> 
+            <td>" . $row['AreaTecEst'] . "</td> 
+            <td>" . $row['OtraAreaBtn'] . "</td> 
+            <td>" . $row['OtraAreaEspecificacion'] . "</td> 
+            <td>" . $row['CVarchivo'] ."</td> 
+            <td>" . $row['Email'] . "</td> 
+            <td>" . $row['ConfEmail'] . "</td> 
+            <td>" . $row['Contrasena'] . "</td> 
+            <td>" . $row['ConfContrasena'] . "</td> 
+            <td><a href='deleteestudiante.php?Id=$row[IdEstudiante]'>Borrar</td>
+            </tr>";
+        }
+    }
+
+    ?>
+    </table>
+
+    <h3>Buscar Estudiante</h3>
+
+    <form action="buscarestudiante.php" method="POST">
+        <input type="text" name="Nombres" placeholder="Nombres"> <br> <br>
+        <input type="submit" value="BUSCAR">
+    </form> <br>
+
+    <h3>Editar Estudiante</h3>
+
+    <form action="updateestudiante.php" method="POST">
+        <input type="text" name="Id" placeholder="Id"> <br><br>
+        <input type="submit" value="EDITAR">
+    </form> <br><br>
 
 </body>
 </html>
