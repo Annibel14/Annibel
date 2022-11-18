@@ -9,8 +9,8 @@
 </head>
 
 <body> <center>
-<div class="Form" style="background: #ffcd71; border: 1px solid black; width: 450px; height: 1000px; font-size: 18px; margin-top: 30px; margin-bottom: 30px;">
-    <form method="GET" action="insertvacantes.php" > <br>
+<div class="Form" style="background: #688391; border: 1px solid black; width: 450px; height: 1000px; font-size: 18px; margin-top: 30px; margin-bottom: 30px; border-radius: 8px; color: white;">
+    <form method="POST" action="insertvacantes.php" > <br>
         <h3>VACANTES</h3><br>
         <P>Nombre de la empresa</P>
         <input type="text" name="NombreE">
@@ -101,6 +101,7 @@
         <input type="text" name="Id" placeholder="Id"> <br><br>
         <input type="submit" value="EDITAR">
     </form> <br><br>
+    
     </center>
 </body>
 </html>

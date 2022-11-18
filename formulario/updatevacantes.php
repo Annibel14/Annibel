@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPDATE</title>
 </head>
-<body>
+<body> <center>
 
     <h3>Modificar Vacantes</h3>
     <?php
@@ -34,29 +34,30 @@
     ?>
 
     <form action="actualizavacantes.php" method="POST">
+        <input type="text" name="Id" placeholder="Id" value="<?php echo $Id; ?>"> <br>
         <br>
-        <input type="text" name="Nombre" placeholder="Nombre" value="<?php echo $Nombre; ?>">
+        <input type="text" name="Nombre" placeholder="Nombre" value="<?php echo $Nombre; ?>"> <br>
         <br>
-        <input type="text" name="Puesto" placeholder="Puesto" value="<?php echo $Puesto;  ?>">
+        <input type="text" name="Puesto" placeholder="Puesto" value="<?php echo $Puesto;  ?>"> <br>
         <br>
-        <input type="text" name="Perfil" placeholder="Perfil" value="<?php echo $Perfil; ?>">
+        <input type="text" name="Perfil" placeholder="Perfil" value="<?php echo $Perfil; ?>"> <br>
         <br>
-        <input type="text" name="Sueldo" placeholder="Sueldo" value="<?php echo $Sueldo;  ?>">
+        <input type="text" name="Sueldo" placeholder="Sueldo" value="<?php echo $Sueldo;  ?>"> <br>
         <br>
-        <input type="text" name="Ubicacion" placeholder="Ubicacion" value="<?php echo $Ubicacion; ?>">
+        <input type="text" name="Ubicacion" placeholder="Ubicacion" value="<?php echo $Ubicacion; ?>"> <br>
         <br>
-        <input type="text" name="Contrato" placeholder="Contrato" value="<?php echo $Contrato;  ?>">
+        <input type="text" name="Contrato" placeholder="Contrato" value="<?php echo $Contrato;  ?>"> <br>
         <br>
-        <input type="text" name="Horario" placeholder="Horario" value="<?php echo $Horario; ?>">
+        <input type="text" name="Horario" placeholder="Horario" value="<?php echo $Horario; ?>"> <br>
         <br>
-        <input type="text" name="Correo" placeholder="Correo" value="<?php echo $Correo;  ?>">
+        <input type="text" name="Correo" placeholder="Correo" value="<?php echo $Correo;  ?>"> <br>
         <br>
-        <input type="text" name="Contacto" placeholder="Contacto" value="<?php echo $Contacto; ?>">
+        <input type="text" name="Contacto" placeholder="Contacto" value="<?php echo $Contacto; ?>"> <br>
         <br>
-        <input type="text" name="Telefono" placeholder="Telefono" value="<?php echo $Telefono; ?>">
+        <input type="text" name="Telefono" placeholder="Telefono" value="<?php echo $Telefono; ?>"> <br>
         <br>
         <button type="submit" name="update">EDITAR</button>
-    </form>
+    </form></center>
 
 
 </body>
